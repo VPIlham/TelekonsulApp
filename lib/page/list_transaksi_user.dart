@@ -244,13 +244,14 @@ class _ListTransaksiUserState extends State<ListTransaksiUser> {
                                   "TRANSAKSI ID #1123123122",
                                   style: TextStyle(
                                       fontSize: 12,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w800),
                                 ),
                                 Text(
                                   "20 APRIL 2021",
                                   style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w700),
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w800,
+                                  ),
                                 ),
                               ],
                             ),
@@ -270,6 +271,7 @@ class _ListTransaksiUserState extends State<ListTransaksiUser> {
                                   "BCA",
                                   style: TextStyle(
                                     fontSize: 12,
+                                    fontWeight: FontWeight.w800,
                                   ),
                                 ),
                               ],
@@ -287,6 +289,7 @@ class _ListTransaksiUserState extends State<ListTransaksiUser> {
                                   "Rp. 50.000,-",
                                   style: TextStyle(
                                     fontSize: 12,
+                                    fontWeight: FontWeight.w800,
                                   ),
                                 ),
                               ],
