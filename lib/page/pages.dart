@@ -13,4 +13,7 @@ part 'register.dart';
 part 'main_page.dart';
 part 'list_dokter_spesialis.dart';
 part 'list_transaksi_user.dart';
+part 'list_transaksi_dokter.dart';
+part 'list_pasien.dart';
 part 'transaksi_detail.dart';
+part 'main_page_dokter.dart';

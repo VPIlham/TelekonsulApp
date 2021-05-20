@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
               backgroundColor: Colors.white, primaryColor: Colors.white),
           // home: LoginPage(),
-          home: ListTransaksiUser(),
+          home: ListPasien(),
         );
       },
     );
