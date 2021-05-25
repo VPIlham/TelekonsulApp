@@ -19,3 +19,5 @@ part 'transaksi_detail.dart';
 part 'main_page_dokter.dart';
 part 'splash_page.dart';
 part 'hapus_jadwal_konsultasi.dart';
+part 'konsultasi.dart';
+part 'list_antrian_dokter.dart';
