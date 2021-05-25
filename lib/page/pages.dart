@@ -17,3 +17,5 @@ part 'list_transaksi_dokter.dart';
 part 'list_pasien.dart';
 part 'transaksi_detail.dart';
 part 'main_page_dokter.dart';
+part 'splash_page.dart';
+part 'hapus_jadwal_konsultasi.dart';

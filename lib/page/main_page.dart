@@ -51,98 +51,190 @@ class _MainPageState extends State<MainPage> {
                     ),
                     Container(
                       height: 180,
+                      width: double.infinity,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          Container(
-                            margin: EdgeInsets.only(
-                                top: 17, right: 15, bottom: 17, left: 15),
-                            padding: EdgeInsets.all(5),
-                            width: 165,
-                            decoration: BoxDecoration(
-                              color: Color(0xffFBFBFB),
-                              borderRadius: const BorderRadius.all(
-                                  const Radius.circular(8)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 146,
+                                margin: EdgeInsets.only(bottom: 10, right: 8),
+                                child: Card(
+                                  color: Color(0xffFBFBFB),
+                                  child: InkWell(
+                                    splashColor: Colors.blue.withAlpha(30),
+                                    onTap: () {
+                                      print('Card tapped.');
+                                    },
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          margin: EdgeInsets.all(13),
+                                          child: Image.asset(
+                                            "assets/profile_dokter.png",
+                                            width: 95,
+                                            height: 93,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Container(
+                                          margin: EdgeInsets.all(13),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "dr. Johnson ",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w900,
+                                                    fontSize: 16),
+                                              ),
+                                              SizedBox(
+                                                height: 5,
+                                              ),
+                                              Text(
+                                                "DOKTER UMUM",
+                                                style: TextStyle(
+                                                    color: Color(0xffB1ABAB),
+                                                    fontSize: 10,
+                                                    fontWeight:
+                                                        FontWeight.w700),
+                                              ),
+                                              SizedBox(
+                                                height: 5,
+                                              ),
+                                              Text(
+                                                "Rp. 50.000,-",
+                                                style: TextStyle(
+                                                    fontSize: 15,
+                                                    fontWeight:
+                                                        FontWeight.w900),
+                                              ),
+                                              SizedBox(
+                                                height: 11,
+                                              ),
+                                              Container(
+                                                height: 25,
+                                                width: 121,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                  color: Color(0xffD11900),
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "BOOKED",
+                                                    style: TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.w900,
+                                                        color: Colors.white),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                              ],
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Image.asset(
-                                  "assets/profile_dokter.png",
-                                  height: 93,
-                                  width: 95,
+                              ),
+                              Container(
+                                height: 146,
+                                margin: EdgeInsets.only(bottom: 10, right: 8),
+                                child: Card(
+                                  color: Color(0xffFBFBFB),
+                                  child: InkWell(
+                                    splashColor: Colors.blue.withAlpha(30),
+                                    onTap: () {
+                                      print('Card tapped.');
+                                    },
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          margin: EdgeInsets.all(13),
+                                          child: Image.asset(
+                                            "assets/profile_dokter.png",
+                                            width: 95,
+                                            height: 93,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Container(
+                                          margin: EdgeInsets.all(13),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "dr. Johnson ",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w900,
+                                                    fontSize: 16),
+                                              ),
+                                              SizedBox(
+                                                height: 5,
+                                              ),
+                                              Text(
+                                                "DOKTER UMUM",
+                                                style: TextStyle(
+                                                    color: Color(0xffB1ABAB),
+                                                    fontSize: 10,
+                                                    fontWeight:
+                                                        FontWeight.w700),
+                                              ),
+                                              SizedBox(
+                                                height: 5,
+                                              ),
+                                              Text(
+                                                "Rp. 50.000,-",
+                                                style: TextStyle(
+                                                    fontSize: 15,
+                                                    fontWeight:
+                                                        FontWeight.w900),
+                                              ),
+                                              SizedBox(
+                                                height: 11,
+                                              ),
+                                              Container(
+                                                height: 25,
+                                                width: 121,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                  color: Color(0xff0096D1),
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "BOOK",
+                                                    style: TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.w900,
+                                                        color: Colors.white),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                                Text(
-                                  "dr Johnson Budi",
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Text(
-                                  "Rp. 25.000,-",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w600),
-                                )
-                              ],
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                                top: 17, right: 15, bottom: 17, left: 15),
-                            padding: EdgeInsets.all(5),
-                            width: 165,
-                            decoration: BoxDecoration(
-                              color: Color(0xffFBFBFB),
-                              borderRadius: const BorderRadius.all(
-                                  const Radius.circular(8)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
-                                  offset: Offset(
-                                      0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Image.asset(
-                                  "assets/profile_dokter.png",
-                                  height: 93,
-                                  width: 95,
-                                ),
-                                Text(
-                                  "dr Johnson Budi",
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Text(
-                                  "Rp. 25.000,-",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w600),
-                                )
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      height: 25,
+                      height: 8,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -174,10 +266,10 @@ class _MainPageState extends State<MainPage> {
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
+                                  spreadRadius: 1,
+                                  blurRadius: 1,
                                   offset: Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 1), // // changes position of shadow
                                 ),
                               ],
                             ),
@@ -208,10 +300,10 @@ class _MainPageState extends State<MainPage> {
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
+                                  spreadRadius: 1,
+                                  blurRadius: 1,
                                   offset: Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 1), //  changes position of shadow
                                 ),
                               ],
                             ),
@@ -242,10 +334,10 @@ class _MainPageState extends State<MainPage> {
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 5,
-                                  blurRadius: 7,
+                                  spreadRadius: 1,
+                                  blurRadius: 1,
                                   offset: Offset(
-                                      0, 3), // changes position of shadow
+                                      0, 1), //  changes position of shadow
                                 ),
                               ],
                             ),
